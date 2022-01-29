@@ -1,0 +1,10 @@
+def arrange(arr):
+    length=len(arr)
+    for i in range(length):
+        if arr[i]<0:
+            arr.insert(-1,arr.pop(i))
+            
+    return arr        
+            
+arrange([1,4,-6,5,-5,0,2,-3])
+           
