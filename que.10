@@ -1,0 +1,7 @@
+def time_24(t):
+    if t[-2:]=='AM' and t[:2]=='12':
+        return '00'+str(t[2:-2])
+    elif t[-2:]=='PM':
+        return str(int(t[:2])+12)+str(t[2:-2])
+        
+time_24("11:23:30 PM")                
