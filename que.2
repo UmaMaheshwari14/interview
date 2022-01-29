@@ -1,0 +1,10 @@
+def even_infinte():
+    num=0
+    while True:
+        yield num
+        num+=2
+even_iter_obj=even_infinte()
+
+for i in range(2):
+    next(even_iter_obj)
+print(next(even_iter_obj))    
